@@ -13,7 +13,7 @@ const Navbar = () => {
             activeClassName="text-white"
             className="inline-flex items-center py-6 px-3 mr-4 text-red-100 hover:text-green-800 text-4xl font-bold cursive tracking-widest"
           >
-            Nicolino
+            Nicola
           </NavLink>
           <NavLink
             to="/about"
@@ -30,6 +30,20 @@ const Navbar = () => {
             Projects
           </NavLink>
           <NavLink
+            to="/skill"
+            activeClassName="text-red-100 bg-red-700"
+            className="inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-800"
+          >
+            Skills
+          </NavLink>
+          <NavLink
+            to="/education"
+            activeClassName="text-red-100 bg-red-700"
+            className="inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-800"
+          >
+            Education
+          </NavLink>
+          <NavLink
             to="/post"
             activeClassName="text-red-100 bg-red-700"
             className="inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-800"
@@ -38,6 +52,13 @@ const Navbar = () => {
           </NavLink>
         </nav>
         <div className="inline-flex py-3 px-3 my-6">
+          <SocialIcon
+            url="mailto:nicolanzi@gmail.com"
+            className="mr-4"
+            target="_blank"
+            fgColor="#fff"
+            style={{ height: 35, width: 35 }}
+          />
           <SocialIcon
             url="https://www.linkedin.com/in/nicola-lanzillotta-94519042/?locale=en_US"
             className="mr-4"
@@ -50,6 +71,7 @@ const Navbar = () => {
             className="mr-4"
             target="_blank"
             fgColor="#fff"
+            bgColor="#000"
             style={{ height: 35, width: 35 }}
           />
           <SocialIcon

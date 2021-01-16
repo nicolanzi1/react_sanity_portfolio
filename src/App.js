@@ -5,6 +5,8 @@ import SinglePost from './components/SinglePost'
 import Post from './components/Post'
 import Project from './components/Project'
 import Navbar from './components/Navbar'
+import Skill from './components/Skill'
+import Education from './components/Education'
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
         <Route component={Home} path="/" exact />
         <Route component={About} path="/about" />
         <Route component={Project} path="/project" />
+        <Route component={Skill} path="/skill" />
+        <Route component={Education} path="/education" />
         <Route component={SinglePost} path="/post/:slug" />
         <Route component={Post} path="/post" />
       </Switch>
